@@ -20,6 +20,7 @@ html_start = """
 </body>
 </html>
 """
+# This is the first page player sees, where he is told what to do
 
 """First page that player sees, telling him what to do"""
 
@@ -46,6 +47,8 @@ main_game = """
 </html>
 """
 
+# Main game page, where computer tries to guess the number
+
 win_screen = """
 <!DOCTYPE html>
 <html lang="en">
@@ -59,6 +62,7 @@ win_screen = """
 </html>
 """
 
+# Win screen, where computer shows you the number you have chosen
 
 @app.route("/", methods=["POST", "GET"])
 def guess_num():
